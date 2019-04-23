@@ -2,7 +2,7 @@
 import string
 from nltk.corpus import stopwords
 from sklearn.feature_extraction.text import CountVectorizer
-import numpy as np 
+
 
 
 #load file
@@ -30,3 +30,4 @@ clean_words = [word for word in no_stop_words if word.isalpha()]
 print(clean_words[:10])
 
 #bag of words 
+def bag_of_words(clean_words):
